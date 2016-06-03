@@ -1,0 +1,41 @@
+create database puntoventa;
+use puntoventa;
+
+create table usuarios(
+	id int not null,
+	usuario varchar(10),
+	password text,
+	tipo_usuario varchar(30),
+	PRIMARY KEY (id)
+)ENGINE= InnoDB;
+
+insert into usuarios values(1, '123', '12amor','adm');
+insert into usuarios values(2, '220', 'seguridad','cajero');
+
+create table proveedores(
+	id int not null,
+	nombre varchar(10),
+	paterno varchar(10),
+	materno varchar(10),
+	direccion text,
+	PRIMARY KEY (id)
+)ENGINE= InnoDB;
+
+create table clientes(
+	id_cliente int not null,
+	nombre_cliente varchar(10),
+	ap_paterno varchar(10),
+	ap_materno varchar(10),
+	direccion_cli text,
+	PRIMARY KEY (id_cliente)
+)ENGINE= InnoDB;
+
+
+create table ventas(
+	id_venta int not null,
+	nom_producto varchar(15),
+	precio float,
+	num_productos int,
+	cantidad_total int,
+	PRIMARY KEY (id_venta)
+)ENGINE= InnoDB;

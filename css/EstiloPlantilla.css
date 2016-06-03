@@ -1,0 +1,30 @@
+body {
+
+}
+
+.banner
+{
+    top: 1px;
+    width: 900px;
+    height: 110px;
+    background-image:url('../images/ban.png');
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    position: relative;
+    margin: auto;
+}
+.main
+{
+    top:40px; 
+    width: 900px;
+    height: 300px;
+    margin: auto;
+}
+.footer
+{
+    top:0px;
+    width: 900px;
+    height: 20px;
+    margin: auto;
+    position: relative;
+}
